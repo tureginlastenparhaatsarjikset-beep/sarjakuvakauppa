@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sarjakuvakauppa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f5fb;
+      color: #142747;
+    }
+    header {
+      background: #102b55;
+      color: white;
+      padding: 30px 15px;
+      text-align: center;
+    }
+    nav {
+      background: #204b82;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 12px;
+      text-decoration: none;
+    }
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    .tuotteet {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 20px;
+    }
+    .tuote {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 3px 12px #0001;
+    }
+    .kuva {
+      font-size: 65px;
+      padding: 20px;
+      background: #e5edff;
+      border-radius: 8px;
+    }
+    .hinta {
+      color: #1758a4;
+      font-weight: bold;
+    }
+    footer {
+      background: #102b55;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 Sarjakuvakauppa</h1>
+    <p>Sarjakuvia kaikille!</p>
+  </header>
+
+  <nav>
+    <a href="#etusivu">Etusivu</a>
+    <a href="#tuotteet">Tuotteet</a>
+    <a href="#yhteys">Yhteystiedot</a>
+  </nav>
+
+  <main id="etusivu">
+    <h2>Tervetuloa sarjakuvakauppaan!</h2>
+    <p>Mangaa, supersankareita ja upeita seikkailuja.</p>
+
+    <h2 id="tuotteet">Suositut tuotteet</h2>
+    <div class="tuotteet">
+      <div class="tuote">
+        <div class="kuva">🕷️</div>
+        <h3>Supersankarisarjakuva</h3>
+        <p class="hinta">12,90 €</p>
+        <p>Jännittäviä seikkailuja.</p>
+      </div>
+      <div class="tuote">
+        <div class="kuva">🏴‍☠️</div>
+        <h3>Manga</h3>
+        <p class="hinta">9,90 €</p>
+        <p>Matka uusiin maailmoihin.</p>
+      </div>
+      <div class="tuote">
+        <div class="kuva">🦇</div>
+        <h3>Supersankarien klassikot</h3>
+        <p class="hinta">14,90 €</p>
+        <p>Keräilijän kokoelmaan.</p>
+      </div>
+    </div>
+
+    <section id="yhteys">
+      <h2>Yhteystiedot</h2>
+      <p>Ota yhteyttä: oma sähköpostiosoitteesi</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Sarjakuvakauppa</p>
+  </footer>
+</body>
+</html>
